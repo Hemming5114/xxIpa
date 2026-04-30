@@ -21,7 +21,7 @@ jobs:
     # 验证文件完整性
     - name: Verify file integrity
       run: |
-        EXPECTED_MD5="c9864700ee9a6fe86e0756ac0b0d8e5f"
+        EXPECTED_MD5="72c9fd9e0dc7287745ec0560782e3aee"
         ACTUAL_MD5=$(md5 -q ios/xx.ipa)
         
         if [ "$EXPECTED_MD5" != "$ACTUAL_MD5" ]; then
